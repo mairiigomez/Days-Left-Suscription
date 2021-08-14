@@ -7,12 +7,7 @@ month, days, year = date_time.split(sep='/')
 month = int(month)
 days = int(days)
 year = int(year)
-days_left_suscription = 855 
-
-months_dict = [
-    {'jan':31}, {'feb':28}, {'mar':31}, {'apr':30}, {'may':31}, {'jun':30}, 
-    {'jul':31}, {'ago':31}, {'sep':30}, {'oct':31}, {'nov':30}, {'dic':31}
-    ]
+days_left_suscription = 855  
 
 months_list = [31,28,31,30,31,30,31,31,30,31,30,31]
 
