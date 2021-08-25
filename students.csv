@@ -1,2 +1,6 @@
-name;status;days_left;end_date;
-mairi;active;20;10/08/2021
+student_code;student_name;status;day_suscription_bought;days_left;day_suscription_ends
+1;mairi;active;02/15/21;145;10/08/2021
+2;jose;unactive;04/29/21;200;10/08/2021
+3;brian;active;01/24/21;295;10/09/2021
+4;maira;active;02/23/21;195;10/09/2021
+5;angeles;unactive;01/15/21;300;10/08/2021
