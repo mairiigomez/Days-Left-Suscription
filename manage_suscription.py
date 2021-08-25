@@ -1,6 +1,15 @@
 """Manage Suscription of Student: Things to consider
 1. Check if the student is active or not, if it is active descount 1 day everyday of the suscription
-2. tell the student when it is the actual day that the suscription ends according to the days left"""
+2. tell the student when it is the actual day that the suscription ends according to the days left
+
+Next things to do: 
+* let the suscription on hold be 00/00/0000/ for students that are active.
+* asociate all the information to one student using classes and methods if
+  the student wants to pause the suscription/unpaused 
+* organize by functions a create modules with my code 
+* a diferent module that ask the user for its code and ask if it want to 
+  pause the suscription 
+"""
 
 import csv
 import datetime
