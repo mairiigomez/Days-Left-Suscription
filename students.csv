@@ -1,6 +1,6 @@
-student_code;student_name;status;day_suscription_bought;days_left;day_suscription_ends
-1;mairi;active;02/15/21;145;10/08/2021
-2;jose;unactive;04/29/21;200;10/08/2021
-3;brian;active;01/24/21;295;10/09/2021
-4;maira;active;02/23/21;195;10/09/2021
-5;angeles;unactive;01/15/21;300;10/08/2021
+student_code;student_name;status;day_suscription_bought;days_left;suscription_on_hold;day_suscription_ends
+1;mairi;active;02/15/2021;173;02/15/2021;02/15/2022
+2;jose;unactive;04/29/2021;335;05/29/2021;07/26/2022
+3;brian;active;01/24/2021;151;02/15/2021;01/24/2022
+4;maira;active;02/23/2021;181;02/15/2021;02/23/2022
+5;angeles;unactive;01/15/2021;275;04/15/2021;05/27/2022
