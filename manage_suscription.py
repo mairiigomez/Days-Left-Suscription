@@ -81,3 +81,5 @@ with open('students.csv', 'w', newline='') as csv_file:
     writer_csv = csv.writer(csv_file, delimiter=';')
     for line in new_file:
         writer_csv.writerow(line)  
+
+
