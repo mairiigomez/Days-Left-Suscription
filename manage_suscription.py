@@ -9,6 +9,10 @@ Next things to do:
 * organize by functions a create modules with my code 
 * a diferent module that ask the user for its code and ask if it want to 
   pause the suscription 
+
+*** send an email if the student is active t mairiigomez@gmail.com with the info of the student
+*** ask if they want to unactive the suscription 
+
 """
 
 import csv
