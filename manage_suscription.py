@@ -31,6 +31,7 @@ with open('students.csv') as csv_file:
     # Read the file as a dictionary
     reader = csv.DictReader(csv_file, delimiter=';')
 
+### going to fix ubugs 
     for dict_row in reader:
         student_code = dict_row['student_code']
         student_name = dict_row['student_name']
