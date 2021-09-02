@@ -15,8 +15,28 @@ Next things to do:
 
 """
 
-import csv
+import csv, smtplib, ssl
 import datetime
+
+def send_email(list_estudents_active):
+    from_adress = "gomezpythonista@gmail.com"
+    receiver_adress = "mairig25@gmail.com"
+    password = input("Enter your password: ")
+
+    for name, end_suscription in list_estudents_active:
+        print(name)
+        print(end_suscription)
+
+        message = """Subject: Your update
+
+        Hi {name}, thank you for having a suscription with Guajiera here is your weekly quote:
+        ' Keep working hard'
+        Your suscription ends on {end_suscription}
+        """
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+            server.login(from_adress, password)
+            server.sendmail(from_adress, receiver_adress, message.format(name=name,end_suscription=end_suscription))
 
 todays_date = datetime.datetime.now()
 
@@ -24,7 +44,7 @@ todays_date = datetime.datetime.now()
 new_file = [
     ['student_code', 'student_name', 'status', 'day_suscription_bought','days_left','suscription_on_hold','day_suscription_ends']
     ]
-
+students_active = []
 
 # Open csv file and assign value to each variable
 with open('students.csv') as csv_file:
@@ -47,6 +67,7 @@ with open('students.csv') as csv_file:
 
         # If student is active discount 1 day to the days_left
         if status == 'active':
+            students_active.append([student_name, day_suscription_ends])
         
             days_have_happened = (todays_date - day_suscription_bought).days
             days_left = 365 - days_have_happened 
@@ -82,6 +103,8 @@ with open('students.csv') as csv_file:
             day_suscription_bought, days_left, suscription_on_hold, day_suscription_ends)
             overwritting_csv = overwritting_csv.split(sep=',')
             new_file.append(overwritting_csv)
+
+send_email(students_active)
 
 # Open the file to write the superlist new_file
 with open('students.csv', 'w', newline='') as csv_file:

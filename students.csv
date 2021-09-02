@@ -1,8 +1,7 @@
 student_code;student_name;status;day_suscription_bought;days_left;suscription_on_hold;day_suscription_ends
-1;mairi;active;02/15/2021;171;02/15/2021;02/15/2022
-2;jose;unactive;04/29/2021;335;05/29/2021;07/28/2022
-3;brian;active;01/24/2021;149;02/15/2021;01/24/2022
-4;maira;active;02/23/2021;179;02/15/2021;02/23/2022
-5;angeles;unactive;01/15/2021;275;04/15/2021;05/29/2022
-6;kelly;active;04/20/2020;-130;03/23/2022;04/20/2021
- 
+1;mairi;active;02/15/2021;165;02/15/2021;02/15/2022
+2;jose;unactive;04/29/2021;335;05/29/2021;08/03/2022
+3;brian;active;01/24/2021;143;02/15/2021;01/24/2022
+4;maira;active;02/23/2021;173;02/15/2021;02/23/2022
+5;angeles;unactive;01/15/2021;275;04/15/2021;06/04/2022
+6;kelly;active;04/20/2020;-136;03/23/2022;04/20/2021
