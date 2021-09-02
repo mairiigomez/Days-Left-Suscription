@@ -12,7 +12,7 @@ password = input("Type your password and press enter: ")
 context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(from_address, password)
-    with open("contacts_file.csv") as file:
+    with open("test\contacts_file.csv") as file:
         reader = csv.reader(file)
         next(reader)  # Skip header row
         for name, email, grade in reader:
@@ -21,3 +21,6 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                 email,
                 message.format(name=name,grade=grade),
             )
+
+# C:\Users\Mayri\Documents\DEVELOPER\codigo_practica\suscription_days_left\test\contacts_file.csv
+# test\contacts_file.csv
