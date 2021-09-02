@@ -17,7 +17,6 @@ Next things to do:
 
 import csv
 import datetime
-#import smtplib, ssl
 
 todays_date = datetime.datetime.now()
 
@@ -26,8 +25,6 @@ new_file = [
     ['student_code', 'student_name', 'status', 'day_suscription_bought','days_left','suscription_on_hold','day_suscription_ends']
     ]
 
-# empty list to storage the students that emails are going to be sent 
-#students_active = []
 
 # Open csv file and assign value to each variable
 with open('students.csv') as csv_file:
